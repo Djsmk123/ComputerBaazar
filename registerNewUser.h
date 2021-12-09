@@ -4,44 +4,31 @@
 #include "json.hpp"
 using json = nlohmann::json;
 using namespace std;
-int reg_user(string username, string password)
+int reg_user(string username, string password,string email)
 {   //check if the username is already taken
     fstream file;
-    file.open("users.txt");
-    string content;
-    char temp;
-   if(file.is_open())
-   {  
-      while(file>>temp)
-      {
-         content.push_back(temp);
-      }
-      json j;
-      try
-       {  j = json::parse(content);
-       }
-        catch(exception e)
+    file.open("users.json", ios::in | ios::out|ios::app); //open the file  
+    json j=json::parse(file);
+    file.close();
+        for(auto& i:j)
         {
-             cout<<endl<<"error"<<endl;
+            if(i["username"]==username)
+            {
+                cout<<"Username already taken"<<endl;
+                system("pause");
+                return 1;
+            }
         }
-      if(j.contains(username))
-      {
-          cout<<endl<<"Username already taken"<<endl;
-          return 1;
-      }
-      else
-      {
-          cout<<endl<<"Username available"<<endl;
-           j[username]=password.c_str();
-           remove("users.txt");
-            ofstream file;
-            file.open("users.txt");
-            file<<j.dump();
-      }
-   }
-   else
-    {
-         cout<<"File not found"<<endl;
-    }
-    return false;
+       //if the username is not taken
+        json j1;
+        j1["username"]=username;
+        j1["password"]=password;
+        j1["email"]=email;
+        j.push_back(j1);
+        remove("users.json");
+        file.open("users.json", ios::out | ios::app);
+        file<<j;
+        cout<<"Registration Successful"<<endl;
+        system("pause");
+        return 0;
 }
