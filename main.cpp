@@ -156,7 +156,7 @@ void forgot_password(){
             file<<"Do not reply this email as it is auto generated.\nYour password is: "<<i["password"];
             file<<"\nThank You for using our service";
             file.close();
-            string s= "curl --ssl-reqd   --url smtps://smtp.gmail.com:465   --user computerbazarbot74804@gmail.com:PdC35qcGgyX46H   --mail-from computerbazarbot74804@gmail.com  --mail-rcpt ";
+            string s= "curl --ssl-reqd   --url smtps://smtp.gmail.com:465   --user youremailusername@gmail.com:password   --mail-from youremailusername@gmail.com --mail-rcpt ";
             s+=email;
             s+="   --upload-file mail.txt"; 
              system(s.c_str());
