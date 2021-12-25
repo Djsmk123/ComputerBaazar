@@ -1,1 +1,3 @@
-{"date":"Fri Dec 03 10:56:12 2021\n","name_of_customer":"mobin","order":[{"item_code":"DELM1","price":0.0,"quantity":21}],"pid":"912"}
+[{"date":"Wed Dec 08 21:20:14 2021\n","name_of_customer":"MOBIN123","order":[{"item_code":"DELM1","price":"900","quantity":"190"},{"item_code":"DELK1","price":"499","quantity":"12"}],"pid":"MOB123"},
+{"date":"Sat Dec 11 22:21:14 2021\n","name_of_customer":"MD MOBIN","order":[{"item_code":"MGTX4GB_OC","price":"15000","quantity":"2"},{"item_code":"GEMX2","price":"399","quantity":"10"}],"pid":"MB855872"}
+]
