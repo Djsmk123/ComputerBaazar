@@ -10,8 +10,8 @@
 ### Contributors
 - [MD MOBIN 02596202720](https://github.com/Djsmk123)
 - [ANURAG ](https://github.com/anuragkainth)
--[ASHOK ](https://github.com/Ashok0077)
--[NAMAN](https://github.com/naman19)
+- [ASHOK ](https://github.com/Ashok0077)
+- [NAMAN](https://github.com/naman19)
 ### Look at presentation......
 Project presentaion
 https://djsmk123.github.io/ComputerBaazar/
