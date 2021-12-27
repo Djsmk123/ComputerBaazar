@@ -1,0 +1,16 @@
+[
+    
+      {
+     "date": "Mon Dec 27 11:57:19 2021\n",
+    "name_of_customer": "mobin",
+    "order": [
+        {
+            "item_code": "DELK1",
+            "price": "499",
+            "quantity": "13"
+        }
+    ],
+    "pid": "mob"
+}
+
+]
