@@ -9,9 +9,9 @@
  - Curl to send email
 ### Contributors
 - [MD MOBIN 02596202720](https://github.com/Djsmk123)
-- [ANURAG ](https://github.com/anuragkainth)
-- [ASHOK ](https://github.com/Ashok0077)
-- [NAMAN](https://github.com/naman19)
+- [ANURAG 00596202720 ](https://github.com/anuragkainth)
+- [Ashok Vaishnav 00996202720 ](https://github.com/Ashok0077)
+- [Naman Maheshwari 02796202720](https://github.com/namanm19)
 ### Look at presentation......
 Project presentaion
 https://djsmk123.github.io/ComputerBaazar/
